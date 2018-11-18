@@ -1,0 +1,27 @@
+[title] {
+    color: red;
+}
+
+[title="portfolio"] {
+    color: violet;
+}
+
+[title*="o-mnie"] {
+    /* zaznaczy wszystkie, nawet jeśli są częścią innego słowa-ciągu znakow */
+    background-color: aqua;
+}
+
+[title ~ ="o-mnie"] {
+    /* zaznaczy tylko te, gdzie "o-mnie" jest osobno */
+    background-color: blue;
+}
+
+[title^=wiecej] {
+    font-size: 32px;
+    color: lime;
+}
+
+[title$=wiecej] {
+    font-size: 21px;
+    color: burlywood;
+}
