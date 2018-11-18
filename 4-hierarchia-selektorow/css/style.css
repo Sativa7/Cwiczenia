@@ -1,0 +1,6 @@
+p#par1 {
+    background-color: aqua; /* id jest wyżej w hierarchii, klasa też - id jest NAJWAŻNIEJSZE. Jedyne, co przebija ID to style inline. A jedyne co przebija, to "important" czyli wykrzyknik, ale to OSTATECZNA OSTATECZNOŚĆ */
+}
+
+p.par1-class { background-color: red; 
+}
