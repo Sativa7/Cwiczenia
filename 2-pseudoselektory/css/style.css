@@ -1,0 +1,45 @@
+/* pseudoelementy - MUSI być content */
+p.before::before {
+    content: "* before - kasia coś ";
+    color: red;
+}
+
+p.before::after {
+    content: "* after - karol coś ";
+    color: blue;
+}
+/* pseudoklasa  */
+p.before:hover {
+    color:green;
+}
+
+.pole-tekstowe:focus { /* pole input po kliknięciu */
+    background-color: lime;
+}
+
+.lista li:first-child { /*chodzi o pierwsze dziecko elementu li*/
+    background-color: aqua;
+}
+
+.lista li:last-child { /*chodzi o ostatnie dziecko elementu li*/
+    background-color: aqua;
+}
+
+.lista li:nth-child(3) { /*chodzi o n-te dziecko elementu li*/
+    background-color: red;
+}
+
+.lista li:nth-last-child(3) { /*chodzi o n-te dziecko elementu li od dołu */
+    background-color: red;
+}
+.lista li:nth-child(even) {
+    background-color: brown; /*wszystkie parzyste */
+}
+
+.lista li:nth-child(2n + 3) {
+    background-color: yellow; /* zaczynamy od trzeciego i kolorujemy co drugi */
+}
+
+.lista li:nth-child(odd) {
+    background-color: orange; /*wszystkie nieparzyste - to co jest niżej nadpisuje to, co jest wyżej */
+}
